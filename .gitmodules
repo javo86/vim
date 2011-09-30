@@ -49,3 +49,6 @@
 [submodule "vim/bundle/easy-motion"]
 	path = vim/bundle/easy-motion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "vim/bundle/vimshell"]
+	path = vim/bundle/vimshell
+	url = https://github.com/Shougo/vimshell.git
