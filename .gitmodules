@@ -61,3 +61,6 @@
 [submodule "vim/bundle/colors-pack1"]
 	path = vim/bundle/colors-pack1
 	url = https://github.com/mgutz/vim-colors.git
+[submodule "vim/bundle/colors-pack2"]
+	path = vim/bundle/colors-pack2
+	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
