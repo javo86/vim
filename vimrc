@@ -61,8 +61,11 @@
     set viewoptions=folds,options,cursor,unix,slash
     "allow for cursor beyond last character
     "set virtualedit=onemore
-    "backups are nice ...
-    set backup
+    "Disable backup
+    set nobackup
+    set nowritebackup
+    "Disable swap files
+    set noswapfile
     "Store a ton of history (default is 20)
     set history=1000
     if v:version >= 703
@@ -83,12 +86,8 @@
   "}
 
   "Setting up the directories{
-    "Backup specific dir
-    set backupdir=$HOME/.vim/.vimbackup/
     " Same for undo files
     set undodir=$HOME/.vim/.vimundo/
-    " Same for swap files
-    set directory=$HOME/.vim/.vimswap/
     " same for view files
     set viewdir=$HOME/.vim/.vimviews/
   "}
@@ -417,15 +416,14 @@
 
 "Plugins {
   "Initialize plugin's settings
-  source ~/conf.d/dotvim/vim/scriptsettings/ack.vim
-  source ~/conf.d/dotvim/vim/scriptsettings/command-T.vim
-  "source ~/conf.d/dotvim/vim/scriptsettings/delitmate.vim
-  source ~/conf.d/dotvim/vim/scriptsettings/easy-motion.vim
-  source ~/conf.d/dotvim/vim/scriptsettings/fugitive.vim
-  source ~/conf.d/dotvim/vim/scriptsettings/nerdtree.vim
-  source ~/conf.d/dotvim/vim/scriptsettings/snipmate.vim
-  source ~/conf.d/dotvim/vim/scriptsettings/syntastic.vim
-  source ~/conf.d/dotvim/vim/scriptsettings/zencoding.vim
-  source ~/conf.d/dotvim/vim/scriptsettings/tagbar.vim
-  source ~/conf.d/dotvim/vim/scriptsettings/task-org.vim
+  source ~/.vim/plugin_settings/ack.vim
+  source ~/.vim/plugin_settings/command-T.vim
+  source ~/.vim/plugin_settings/easy-motion.vim
+  source ~/.vim/plugin_settings/fugitive.vim
+  source ~/.vim/plugin_settings/nerdtree.vim
+  source ~/.vim/plugin_settings/snipmate.vim
+  source ~/.vim/plugin_settings/syntastic.vim
+  source ~/.vim/plugin_settings/zencoding.vim
+  source ~/.vim/plugin_settings/tagbar.vim
+  source ~/.vim/plugin_settings/task-org.vim
 "}
