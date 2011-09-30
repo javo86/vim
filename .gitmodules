@@ -58,3 +58,6 @@
 [submodule "vim/bundle/addon-mw-utils"]
 	path = vim/bundle/addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vim/bundle/colors-pack1"]
+	path = vim/bundle/colors-pack1
+	url = https://github.com/mgutz/vim-colors.git
