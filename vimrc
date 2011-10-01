@@ -29,6 +29,8 @@
 
   "Behaivor {
     "backspace for dummys
+    "Source vimrc when it's saved
+    au BufWritePost .vimrc source %
     set backspace=indent,eol,start
   " }
 
@@ -148,8 +150,8 @@
         set go-=T
         set go-=m
         set go-=r
-        set go-=l
-        colorscheme solarized
+        set go-=L
+        colorscheme lucius
     else
         "# of colors
         set t_Co=256
@@ -291,7 +293,8 @@
 
   "Copy, paste and yank mappings {
     "Copy selection to clipboard
-    nnoremap <leader>y "+y
+    nnoremap <leader>y "*y
+
     "Copy everything to clipboard
     nnoremap <leader>Y "*y
     "Paste auto formatted code
@@ -319,6 +322,11 @@
     nnoremap <silent>,wqa :wqa <cr>
     imap <c-s> <ESC>:w<cr>a
   "}
+
+  "User Interface {
+    "Toggles menu bar
+    nnoremap <C-f2> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
+  " }
 
   "Windows an tabs movement {
     "Mapping para que alt funcione en vim
